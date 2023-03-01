@@ -1,13 +1,10 @@
-package Config;
+package com.example.Blog_Application;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
-import Models.Post;
-import Services.PostService;
 
 @Component
 public class SeedData implements CommandLineRunner{

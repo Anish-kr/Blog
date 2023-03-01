@@ -1,10 +1,13 @@
-package Repository;
+package com.example.Blog_Application;
 
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import Models.Post;
 
 @Repository
-public interface PostRepository extends JpaRepository<Post, Long>{
+public interface PostRepository extends JpaRepository<Post, Long>
+
+{
 
 }
+

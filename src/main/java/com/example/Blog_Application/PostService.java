@@ -1,16 +1,15 @@
-package Services;
+package com.example.Blog_Application;
 
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 import lombok.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.stereotype.Service;
 
-import Models.Post;
-import Repository.PostRepository;
-
 @Service
+
 public class PostService {
 
 	@Autowired
@@ -33,7 +32,8 @@ public class PostService {
 		{
 		if(post.getId()==null)
 			{post.setCreatedAt(LocalDateTime.now());}
-			return postrepository.save(post); 	
+			
+		return postrepository.save(post); 	
 		}
 	
 }
