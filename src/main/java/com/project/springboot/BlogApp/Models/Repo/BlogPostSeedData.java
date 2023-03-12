@@ -29,7 +29,7 @@ public class BlogPostSeedData implements CommandLineRunner{
 			newblog1.setBlogId((long) 1);
 			newblog1.setBlogPostTitle("First title");
 			newblog1.setBlogPostdata("I am a happy soul");
-			newblog1.setTime(LocalDateTime.now());
+			newblog1.setCreatedAt(LocalDateTime.now());
 			blogservice.savePost(newblog1);
 			
 
@@ -37,28 +37,28 @@ public class BlogPostSeedData implements CommandLineRunner{
 			newblog1.setBlogId((long) 2);
 			newblog1.setBlogPostTitle("Second title");
 			newblog1.setBlogPostdata("I am a even more happy soul");
-			newblog1.setTime(LocalDateTime.now());
+			newblog1.setCreatedAt(LocalDateTime.now());
 			blogservice.savePost(newblog1);
 			
 		
 			newblog1.setBlogId((long) 3);
 			newblog1.setBlogPostTitle("Third title");
 			newblog1.setBlogPostdata("I am a very patient man");
-			newblog1.setTime(LocalDateTime.now());
+			newblog1.setCreatedAt(LocalDateTime.now());
 			blogservice.savePost(newblog1);
 			
 		
 			newblog1.setBlogId((long) 4);
 			newblog1.setBlogPostTitle("Fourth title");
 			newblog1.setBlogPostdata("I love loving what i am doing");
-			newblog1.setTime(LocalDateTime.now());
+			newblog1.setCreatedAt(LocalDateTime.now());
 			blogservice.savePost(newblog1);
 			
 
 			newblog1.setBlogId((long) 5);
 			newblog1.setBlogPostTitle("Fifth title");
 			newblog1.setBlogPostdata("I love mySelf");
-			newblog1.setTime(LocalDateTime.now());
+			newblog1.setCreatedAt(LocalDateTime.now());
 			blogservice.savePost(newblog1);
 			
 		}

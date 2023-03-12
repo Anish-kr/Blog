@@ -32,7 +32,7 @@ public class BlogService {
 	{
 		if(apost.getBlogId()==null)
 		{
-			apost.setTime(LocalDateTime.now());
+			apost.setCreatedAt(LocalDateTime.now());
 		}
 		blogrepo.save(apost);
 	}
